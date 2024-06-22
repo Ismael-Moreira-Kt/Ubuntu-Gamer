@@ -27,6 +27,9 @@ init_install() {
 add_repositories() {
     # Papirus
     sudo add-apt-repository ppa:papirus/papirus
+
+    # asdf
+    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 }
 
 
@@ -41,4 +44,8 @@ install_packages() {
 
     # Snap
     sudo apt install snapd
+
+    # asdf
+    . "$HOME/.asdf/asdf.sh"
+    . "$HOME/.asdf/completions/asdf.bash"
 }
