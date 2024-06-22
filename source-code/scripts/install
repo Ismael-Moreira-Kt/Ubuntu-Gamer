@@ -123,4 +123,8 @@ install_packages() {
     # flatpack
     sudo apt install flatpak
     sudo apt install gnome-software-plugin-flatpak
+
+    # Snes9x
+    flatpak install --from https://flathub.org/repo/appstream/com.snes9x.Snes9x.flatpakref
+    flatpak --user update com.snes9x.Snes9x
 }
