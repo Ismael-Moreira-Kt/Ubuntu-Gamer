@@ -1,0 +1,23 @@
+!#/bin/bash
+
+
+
+
+
+commands() {
+    # upd-sys
+    chmod +x installers/upd-sys 
+
+    # dropbox
+    chmod +x installers/dropbox
+
+    # ryujinx
+    chmod +x installers/ryujinx
+
+    # snes9x
+    chmod +x installers/snes9x
+
+
+
+    sudo mv installers/* /bin/
+}
