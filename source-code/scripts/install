@@ -42,6 +42,9 @@ install_packages() {
     # Papirus
     sudo apt install papirus-icon-theme
 
+    # gnome-system-monitor
+    sudo snap install gnome-system-monitor
+
     # Snap
     sudo apt install snapd
 
