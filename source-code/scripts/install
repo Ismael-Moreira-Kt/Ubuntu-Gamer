@@ -19,3 +19,23 @@ init_install() {
     add_repositories
     install_packages
 }
+
+
+
+
+
+add_repositories() {
+    # Papirus
+    sudo add-apt-repository ppa:papirus/papirus
+}
+
+
+
+
+
+install_packages() {
+    sudo apt update 
+
+    # Papirus
+    sudo apt install papirus-icon-theme
+}
