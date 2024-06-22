@@ -1,0 +1,187 @@
+#!/bin/bash
+
+
+
+
+
+init_install() {
+    # Curl
+    sudo apt install curl 
+
+    # WGet
+    sudo apt install wget 
+    
+    # Git 
+    sudo apt install git
+
+    sudo apt update
+
+    add_repositories
+    install_packages
+}
+
+
+
+
+
+add_repositories() {
+    # Papirus
+    sudo add-apt-repository ppa:papirus/papirus
+
+    # asdf
+    git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+
+    # unity
+    wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+    sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
+
+    # Mono
+    sudo apt install ca-certificates gnupg
+    sudo gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/mono-official-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+    echo "deb [signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg] https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+
+    # timeshift
+    sudo add-apt-repository -y ppa:teejee2008/timeshift
+
+    # tlp
+    sudo add-apt-repository ppa:linrunner/tlp
+
+    # flatpack
+    sudo add-apt-repository ppa:flatpak/stable
+
+    # winehq
+    sudo dpkg --add-architecture i386
+
+    # mangoHud
+    sudo add-apt-repository ppa:oibaf/graphics-drivers
+
+    # citra
+    sudo add-apt-repository ppa:samoilov-lex/retrogames
+}
+
+
+
+
+
+install_packages() {
+    sudo apt update 
+
+    # Papirus
+    sudo apt install papirus-icon-theme
+
+    # gnome-system-monitor
+    sudo snap install gnome-system-monitor
+
+    # Snap
+    sudo apt install snapd
+
+    # asdf
+    . "$HOME/.asdf/asdf.sh"
+    . "$HOME/.asdf/completions/asdf.bash"
+
+    # nodejs
+    asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
+    asdf install nodejs 21.0.0
+    asdf global nodejs 21.0.0
+
+    # yarn
+    npm install --global yarn
+
+    # python
+    asdf plugin-add python
+    asdf install python 3.6.12
+    asdf global python 3.6.12
+
+    # mono
+    sudo apt install mono-complete
+
+    # unity
+    sudo apt-get install unityhub
+
+    # flstudio
+    sudo snap install flstudio
+
+    # blender
+    snap install blender --classic
+
+    # gimp
+    sudo snap install gimp
+
+    # vlc
+    sudo snap install vlc
+
+    # vscode
+    sudo snap install code --classic
+
+    # gdebi
+    sudo apt install gdebi
+
+    # dropbox
+    cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+    # htop
+    sudo apt install htop
+
+    # timeshift
+    sudo apt-get install timeshift
+
+    # tlp
+    sudo apt install tlp tlp-rdw
+    sudo systemctl enable tlp.service
+
+    # flatpack
+    sudo apt install flatpak
+    sudo apt install gnome-software-plugin-flatpak
+
+    # Snes9x
+    flatpak install --from https://flathub.org/repo/appstream/com.snes9x.Snes9x.flatpakref
+    flatpak --user update com.snes9x.Snes9x
+
+    # stella
+    wget https://github.com/stella-emu/stella/releases/download/6.5.3/stella_6.5.3_ubuntu-18.04_amd64.deb -O stella.deb
+    sudo dpkg -i stella.deb
+
+    # ppsspp
+    sudo snap install ppsspp-emu
+    
+    # minecraft installer
+    sudo snap install mc-installer
+
+    # steam
+    sudo snap install steam
+
+    # clamav
+    sudo apt install clamav 
+    sudo apt install clamav-daemon
+    sudo freshclam
+
+    # godot
+    sudo snap install godot-4
+
+    # gamemode
+    sudo apt install gamemode
+
+    # lutris
+    sudo apt install lutris
+
+    # winehq
+    sudo apt install wine wine64 wine32:i386
+
+    # dxvk
+    sudo apt install dxvk
+
+    # glmark2
+    sudo apt install glmark2
+
+    # mangoHud
+    sudo apt install mangohud
+
+    # chkrootkit
+    sudo apt install chkrootkit
+
+    # citra
+    sudo apt install citra
+
+    # ryujinx
+    flatpak install flathub org.ryujinx.Ryujinx
+}
