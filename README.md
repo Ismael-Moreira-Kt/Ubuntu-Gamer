@@ -71,3 +71,12 @@
     <li><b>Snes9x:</b> Open Snes9x.</li>
 </ul>
 </div>
+
+
+<br><br><br>
+
+
+<div>
+    <h2>License</h2>
+    <p>This project uses the Apache 2.0 License.</p>
+</div>
