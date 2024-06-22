@@ -10,3 +10,13 @@ Install the following packages and repositories:
     - dropbox
     - timeshift
     - chkrootkit
+    - asdf
+    - nodejs
+    - python
+    - vscode
+    - mono
+    - godot
+    - lutris
+    - wine
+    - winehq
+    - dxvk
