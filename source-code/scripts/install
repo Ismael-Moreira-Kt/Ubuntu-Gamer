@@ -172,4 +172,7 @@ install_packages() {
 
     # mangoHud
     sudo apt install mangohud
+
+    # chkrootkit
+    sudo apt install chkrootkit
 }
