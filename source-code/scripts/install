@@ -1,0 +1,21 @@
+#!/bin/bash
+
+
+
+
+
+init_install() {
+    # Curl
+    sudo apt install curl 
+
+    # WGet
+    sudo apt install wget 
+    
+    # Git 
+    sudo apt install git
+
+    sudo apt update
+
+    add_repositories
+    install_packages
+}
