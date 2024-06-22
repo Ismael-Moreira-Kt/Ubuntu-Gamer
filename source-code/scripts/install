@@ -30,6 +30,11 @@ add_repositories() {
 
     # asdf
     git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
+
+    # unity
+    wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+    sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
+
 }
 
 
@@ -64,4 +69,7 @@ install_packages() {
     asdf plugin-add python
     asdf install python 3.6.12
     asdf global python 3.6.12
+
+    # unity
+    sudo apt-get install unityhub
 }
