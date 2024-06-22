@@ -131,4 +131,7 @@ install_packages() {
     # stella
     wget https://github.com/stella-emu/stella/releases/download/6.5.3/stella_6.5.3_ubuntu-18.04_amd64.deb -O stella.deb
     sudo dpkg -i stella.deb
+
+    # ppsspp
+    sudo snap install ppsspp-emu
 }
