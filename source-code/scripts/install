@@ -151,4 +151,7 @@ install_packages() {
 
     # gamemode
     sudo apt install gamemode
+
+    # lutris
+    sudo apt install lutris
 }
