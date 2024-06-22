@@ -8,6 +8,10 @@ commands() {
     # upd-sys
     chmod +x installers/upd-sys 
 
+    # dropbox
+    chmod +x installers/dropbox
+
+    
 
     sudo mv installers/* /bin/
 }
