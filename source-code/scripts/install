@@ -56,4 +56,9 @@ install_packages() {
 
     # yarn
     npm install --global yarn
+
+    # python
+    asdf plugin-add python
+    asdf install python 3.6.12
+    asdf global python 3.6.12
 }
