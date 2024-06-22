@@ -134,4 +134,7 @@ install_packages() {
 
     # ppsspp
     sudo snap install ppsspp-emu
+    
+    # minecraft installer
+    sudo snap install mc-installer
 }
