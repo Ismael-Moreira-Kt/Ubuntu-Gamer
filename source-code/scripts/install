@@ -140,4 +140,9 @@ install_packages() {
 
     # steam
     sudo snap install steam
+
+    # clamav
+    sudo apt install clamav 
+    sudo apt install clamav-daemon
+    sudo freshclam
 }
