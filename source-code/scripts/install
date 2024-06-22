@@ -145,4 +145,7 @@ install_packages() {
     sudo apt install clamav 
     sudo apt install clamav-daemon
     sudo freshclam
+
+    # godot
+    sudo snap install godot-4
 }
