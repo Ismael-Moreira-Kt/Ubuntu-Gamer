@@ -36,3 +36,5 @@ Install the following packages and repositories:
     - gamemode
     - citra
     - ryujinx
+    - snap
+    - clamav
