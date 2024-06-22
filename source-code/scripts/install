@@ -75,4 +75,7 @@ install_packages() {
 
     # flstudio
     sudo snap install flstudio
+
+    # blender
+    snap install blender --classic
 }
