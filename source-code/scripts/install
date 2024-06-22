@@ -72,4 +72,7 @@ install_packages() {
 
     # unity
     sudo apt-get install unityhub
+
+    # flstudio
+    sudo snap install flstudio
 }
