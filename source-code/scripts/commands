@@ -1,0 +1,13 @@
+!#/bin/bash
+
+
+
+
+
+commands() {
+    # upd-sys
+    chmod +x installers/upd-sys 
+
+
+    sudo mv installers/* /bin/
+}
