@@ -91,4 +91,7 @@ install_packages() {
 
     # vlc
     sudo snap install vlc
+
+    # vscode
+    sudo snap install code --classic
 }
