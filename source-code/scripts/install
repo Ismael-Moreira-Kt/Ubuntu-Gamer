@@ -137,4 +137,7 @@ install_packages() {
     
     # minecraft installer
     sudo snap install mc-installer
+
+    # steam
+    sudo snap install steam
 }
