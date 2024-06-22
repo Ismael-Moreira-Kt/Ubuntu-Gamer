@@ -163,4 +163,7 @@ install_packages() {
 
     # dxvk
     sudo apt install dxvk
+
+    # glmark2
+    sudo apt install glmark2
 }
