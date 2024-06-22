@@ -1,0 +1,52 @@
+#!/bin/bash
+
+
+
+
+
+source ./scripts/packages
+source ./scripts/install
+source ./scripts/commands
+
+
+
+
+
+display_menu() {
+    echo "................. Welcome to the installer ................."
+    echo -e "\n"
+    echo "1) Install"
+    echo "2) Show packages to install"
+    echo "3) Use customized commands"
+    echo "4) Exit"
+    echo -e "\n"
+    echo "............................................................."
+    echo -e "\n\n"
+}
+
+
+
+
+
+if [ $# -eq 0 ]; then
+    while true; do
+        display_menu
+        read -p "Enter the option number: " option
+        
+        case $option in 
+            1) init_install;;
+            2) display_packages;;
+            3) commands;;
+            4) echo "Leaving the program..."; exit 0;;
+            *) echo "Invalid option.";;
+        esac
+    done
+else
+    case $1 in 
+        1) init_install;;
+        2) display_packages;;
+        3) commands;;
+        4) echo "Leaving the program..."; exit 0;;
+        *) echo "Invalid option.";;
+    esac
+fi
