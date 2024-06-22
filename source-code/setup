@@ -4,6 +4,14 @@
 
 
 
+source ./scripts/packages
+source ./scripts/install
+source ./scripts/commands
+
+
+
+
+
 display_menu() {
     echo "................. Welcome to the installer ................."
     echo -e "\n"
