@@ -1,0 +1,5 @@
+Update the list of software sources with the following items: 
+    - ppa:papirus/papirus
+
+Install the following packages and repositories:
+    - papirus-icon-theme
