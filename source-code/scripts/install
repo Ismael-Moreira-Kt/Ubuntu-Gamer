@@ -78,4 +78,7 @@ install_packages() {
 
     # blender
     snap install blender --classic
+
+    # gimp
+    sudo snap install gimp
 }
