@@ -48,6 +48,9 @@ add_repositories() {
 
     # flatpack
     sudo add-apt-repository ppa:flatpak/stable
+
+    # winehq
+    sudo dpkg --add-architecture i386
 }
 
 
@@ -154,4 +157,7 @@ install_packages() {
 
     # lutris
     sudo apt install lutris
+
+    # winehq
+    sudo apt install wine wine64 wine32:i386
 }
