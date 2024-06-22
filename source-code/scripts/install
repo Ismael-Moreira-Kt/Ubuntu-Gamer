@@ -160,4 +160,7 @@ install_packages() {
 
     # winehq
     sudo apt install wine wine64 wine32:i386
+
+    # dxvk
+    sudo apt install dxvk
 }
