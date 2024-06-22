@@ -54,6 +54,9 @@ add_repositories() {
 
     # mangoHud
     sudo add-apt-repository ppa:oibaf/graphics-drivers
+
+    # citra
+    sudo add-apt-repository ppa:samoilov-lex/retrogames
 }
 
 
@@ -175,4 +178,7 @@ install_packages() {
 
     # chkrootkit
     sudo apt install chkrootkit
+
+    # citra
+    sudo apt install citra
 }
