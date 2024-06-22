@@ -42,6 +42,9 @@ add_repositories() {
 
     # timeshift
     sudo add-apt-repository -y ppa:teejee2008/timeshift
+
+    # tlp
+    sudo add-apt-repository ppa:linrunner/tlp
 }
 
 
@@ -109,4 +112,8 @@ install_packages() {
 
     # timeshift
     sudo apt-get install timeshift
+
+    # tlp
+    sudo apt install tlp tlp-rdw
+    sudo systemctl enable tlp.service
 }
