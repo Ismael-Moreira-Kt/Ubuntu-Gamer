@@ -38,4 +38,7 @@ install_packages() {
 
     # Papirus
     sudo apt install papirus-icon-theme
+
+    # Snap
+    sudo apt install snapd
 }
