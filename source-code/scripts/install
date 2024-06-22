@@ -94,4 +94,7 @@ install_packages() {
 
     # vscode
     sudo snap install code --classic
+
+    # gdebi
+    sudo apt install gdebi
 }
