@@ -81,4 +81,7 @@ install_packages() {
 
     # gimp
     sudo snap install gimp
+
+    # vlc
+    sudo snap install vlc
 }
