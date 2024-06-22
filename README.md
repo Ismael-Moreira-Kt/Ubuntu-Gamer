@@ -28,3 +28,46 @@
 <br><br><br>
 
 
+<div>
+    <h2>Using</h2>
+    <br>
+    <p>Enter the source code folder.</p>
+
+```bash
+    cd source-code
+```
+
+<p>Give setup execute permissions.</p>
+
+```bash
+    chmod +x setup
+```
+
+<p>Run the project.</p>
+
+```bash
+    ./setup
+```
+
+<p>You will see this menu in the terminal.</p>
+
+<div align="center">
+    <img src="./assets/menu.png" alt="menu" width="300px">
+</div>
+
+<p>By selecting option 1, the packages started to be installed.</p>
+<p>If you select option 2, it will show you the list of packages to install.</p>
+
+<div align="center">
+    <img src="./assets/packages.png" alt="menu" width="300px">
+</div>
+
+<p>The third option adds some simple customized scripts to make everyday life easier, such as:</p>
+
+<ul>
+    <li><b>upd-sys:</b> It abstracts update, upgrade, autoremove and autoclean.</li>
+    <li><b>dropbox:</b> Open dropbox.</li>
+    <li><b>Ryujinx:</b> Open Ryujinx.</li>
+    <li><b>Snes9x:</b> Open Snes9x.</li>
+</ul>
+</div>
