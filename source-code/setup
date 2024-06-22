@@ -4,6 +4,22 @@
 
 
 
+display_menu() {
+    echo "................. Welcome to the installer ................."
+    echo -e "\n"
+    echo "1) Install"
+    echo "2) Show packages to install"
+    echo "3) Use customized commands"
+    echo "4) Exit"
+    echo -e "\n"
+    echo "............................................................."
+    echo -e "\n\n"
+}
+
+
+
+
+
 if [ $# -eq 0 ]; then
     while true; do
         display_menu
