@@ -1,0 +1,23 @@
+#!/bin/bash
+
+
+
+
+
+display_packages() {
+    target="scripts/packages.txt"
+
+
+    if [ ! -f "$target" ]; then
+        echo "File not found: $target"
+        return 1
+    fi
+
+
+    while IFS= read -r line; do
+        echo "$line"
+    done < "$target"
+
+
+    echo -e "\n\n"
+}

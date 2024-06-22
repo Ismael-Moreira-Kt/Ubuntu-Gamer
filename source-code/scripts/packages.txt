@@ -1,0 +1,42 @@
+Update the list of software sources with the following items: 
+    - ppa:papirus/papirus
+    - timeshift
+    - mono
+    - asdf
+    - unityhub
+
+Install the following packages and repositories:
+    - papirus-icon-theme
+    - curl
+    - git
+    - gdebi
+    - dropbox
+    - timeshift
+    - chkrootkit
+    - asdf
+    - nodejs
+    - python
+    - vscode
+    - mono
+    - godot
+    - lutris
+    - wine
+    - winehq
+    - dxvk
+    - gnome-system-monitor
+    - flstudio
+    - blender
+    - gimp
+    - vlc
+    - Snes9x
+    - stella
+    - ppsspp
+    - minecraft installer
+    - steam
+    - gamemode
+    - citra
+    - ryujinx
+    - snap
+    - clamav
+    - glmark2
+    - mangoHud
