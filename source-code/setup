@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+
+
+
+if [ $# -eq 0 ]; then
+    while true; do
+        display_menu
+        read -p "Enter the option number: " option
+        
+        case $option in 
+            1) init_install;;
+            2) display_packages;;
+            3) commands;;
+            4) echo "Leaving the program..."; exit 0;;
+            *) echo "Invalid option.";;
+        esac
+    done
+else
+    case $1 in 
+        1) init_install;;
+        2) display_packages;;
+        3) commands;;
+        4) echo "Leaving the program..."; exit 0;;
+        *) echo "Invalid option.";;
+    esac
+fi
