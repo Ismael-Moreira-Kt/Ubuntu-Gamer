@@ -181,4 +181,7 @@ install_packages() {
 
     # citra
     sudo apt install citra
+
+    # ryujinx
+    flatpak install flathub org.ryujinx.Ryujinx
 }
