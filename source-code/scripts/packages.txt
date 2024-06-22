@@ -38,3 +38,5 @@ Install the following packages and repositories:
     - ryujinx
     - snap
     - clamav
+    - glmark2
+    - mangoHud
