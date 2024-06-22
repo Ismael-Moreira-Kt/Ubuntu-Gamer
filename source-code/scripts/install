@@ -53,4 +53,7 @@ install_packages() {
     asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
     asdf install nodejs 21.0.0
     asdf global nodejs 21.0.0
+
+    # yarn
+    npm install --global yarn
 }
